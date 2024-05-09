@@ -45,7 +45,7 @@ public class TestContext {
         if (testEnv.equals("local")) {
             switch (browser) {
                 case "chrome":
-                    WebDriverManager.chromedriver().browserVersion("123").setup();
+                    WebDriverManager.chromedriver().setup();
                     Map<String, Object> chromePreferences = new HashMap<>();
                     chromePreferences.put("profile.default_content_settings.geolocation", 2);
                     chromePreferences.put("download.prompt_for_download", false);
