@@ -13,6 +13,7 @@
       Then I type "student@example.com" into element with xpath "//input[@placeholder='Please enter an Email']"
       And I type "welcome" into element with xpath "//input[@placeholder='Please enter a Password']"
       And I click on element with xpath "//button[@type='submit']"
+      And I wait for element with xpath "//span[contains(@class, 'logout-box')]/a" to be present
       Then element with xpath "//span[contains(@class, 'logout-box')]/a" should contain text "Student"
 
     @smoke
