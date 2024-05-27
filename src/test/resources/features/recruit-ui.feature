@@ -2,7 +2,7 @@
   Feature: Recruit application tests
 
     Background: Test environment
-      Given I open url "http://3.80.230.80"
+      Given I open url "http://recruit-qa.portnov.com"
 
     @smoke
     @regression
